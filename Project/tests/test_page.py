@@ -1,7 +1,6 @@
 import pytest
 from base import BaseTest
 import time
-from selenium.webdriver.common.by import By
 
 
 class Test_Page(BaseTest):
@@ -18,13 +17,13 @@ class Test_Page(BaseTest):
     def test_method_name(self):
         # Write your methods here
         
-        kids = self.driver.find_element()
+        kids = self.driver.find_element(By)
         kids.click()
 
         self.driver.refresh()
-        time.sleep(2)
+        time.sleep
 
-        locator = self.driver.find_element(By.CSS_SELECTOR, "a[href=\"/store-locator\"]")
+        locator = self.driver.find_element(By)
         locator.click()
 
         self.driver.refresh()
